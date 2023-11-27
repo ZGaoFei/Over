@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".livedatatest.LiveDataTestActivity">
+
+    <Button
+        android:id="@+id/bt_set_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="setValue"/>
+
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_add_left_fragment"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="添加左边fragment"/>
+
+        <Button
+            android:id="@+id/bt_add_right_fragment"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="添加右边fragment"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fl_fragment_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#333333"
+            android:layout_weight="1"/>
+
+        <FrameLayout
+            android:id="@+id/fl_fragment_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#cccccc"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
