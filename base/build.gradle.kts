@@ -46,6 +46,11 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     implementation("com.github.bumptech.glide:glide:4.16.0")
-    implementation("com.squareup.retrofit2:retrofit:2.3.0")
-    implementation("com.squareup.okhttp3:okhttp:3.12.6")
+    api("com.squareup.retrofit2:retrofit:2.9.0")
+    api("com.squareup.okhttp3:okhttp:3.14.9")
+
+    api("io.reactivex.rxjava2:rxjava:2.2.21")
+    api("io.reactivex.rxjava2:rxandroid:2.1.1")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.retrofit2:adapter-rxjava2:2.9.0")
 }

@@ -3,6 +3,14 @@
 
     <application>
         <activity
+            android:name=".net.NetTestActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="net_test" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".multilist.MultiListActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">

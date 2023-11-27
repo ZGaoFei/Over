@@ -22,7 +22,8 @@ class OtherHomeActivity : BaseActivity() {
 
     override fun initData() {
         list = mutableListOf(
-            Item("other home", "multi_list"),
+            Item("multi list", "multi_list"),
+            Item("net test", "net_test"),
         )
     }
 
