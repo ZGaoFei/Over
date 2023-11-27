@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import java.lang.Class.forName
 
 abstract class MultiListAdapter(private val list: MutableList<MultiListItemData>) :
-    RecyclerView.Adapter<MultiListViewHolder>() {
+    RecyclerView.Adapter<MultiListViewHolder<MultiListItemData>>() {
 
     abstract fun getItemRes(type: Int): ItemRes
 
@@ -19,7 +19,7 @@ abstract class MultiListAdapter(private val list: MutableList<MultiListItemData>
         return list.size
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MultiListViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MultiListViewHolder<MultiListItemData> {
         val itemRes = getItemRes(viewType)
         val viewHolderClazz = itemRes.viewHolderClazz
         val resId = itemRes.resId
@@ -27,10 +27,10 @@ abstract class MultiListAdapter(private val list: MutableList<MultiListItemData>
 
         val clazz = forName(viewHolderClazz)
         val constructor = clazz.getConstructor(View::class.java)
-        return constructor.newInstance(view) as MultiListViewHolder
+        return constructor.newInstance(view) as MultiListViewHolder<MultiListItemData>
     }
 
-    override fun onBindViewHolder(holder: MultiListViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MultiListViewHolder<MultiListItemData>, position: Int) {
         holder.update(list[position])
     }
 
