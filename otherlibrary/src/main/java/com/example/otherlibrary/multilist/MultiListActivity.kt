@@ -7,6 +7,7 @@ import com.example.base.multilist.MultiListAdapter
 import com.example.base.multilist.MultiListItemData
 import com.example.otherlibrary.databinding.ActivityMultiListBinding
 import com.example.otherlibrary.multilist.data.ItemOneData
+import com.example.otherlibrary.multilist.data.ItemThreeData
 import com.example.otherlibrary.multilist.data.ItemTwoData
 
 class MultiListActivity : BaseActivity() {
@@ -31,7 +32,7 @@ class MultiListActivity : BaseActivity() {
             ItemTwoData(1, "haha", "haha"),
             ItemTwoData(1, "haha", "haha"),
             ItemTwoData(1, "haha", "haha"),
-            MultiListItemData(2, "", ""),
+            ItemThreeData(2, "", "", "https://pic4.zhimg.com/v2-570aad7dbef96e49ab01780ab7ebc98b_r.jpg"),
             ItemOneData(0, "haha", "haha", 0),
             ItemOneData(0, "haha", "haha", 0),
             ItemOneData(0, "haha", "haha", 0),
