@@ -7,4 +7,16 @@
     android:orientation="vertical"
     tools:context=".net.NetTestActivity">
 
+    <Button
+        android:id="@+id/bt_get_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模拟数据获取"/>
+
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="hello world"/>
+
 </LinearLayout>

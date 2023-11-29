@@ -1,4 +1,4 @@
-package com.example.base.net.rxjava
+package com.example.base.net
 
 import androidx.lifecycle.ViewModel
 

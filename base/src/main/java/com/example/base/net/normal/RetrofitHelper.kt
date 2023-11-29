@@ -1,12 +1,11 @@
-package com.example.base.net.rxjava
+package com.example.base.net.normal
 
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
-import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
-// rxjava + retrofit
-object RxJavaRetrofit {
+// retrofit 默认实现方式
+object RetrofitHelper {
 
     // 一个域名对应一个retrofit对象
     private val retrofits: HashMap<String, Retrofit> = HashMap()
@@ -19,7 +18,6 @@ object RxJavaRetrofit {
             .Builder()
             .baseUrl(baseUrl)
             .addConverterFactory(GsonConverterFactory.create())
-            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .client(client)
             .build()
     }
@@ -33,5 +31,4 @@ object RxJavaRetrofit {
             retrofit
         }
     }
-
 }

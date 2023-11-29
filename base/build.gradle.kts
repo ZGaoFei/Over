@@ -47,10 +47,17 @@ dependencies {
 
     implementation("com.github.bumptech.glide:glide:4.16.0")
     api("com.squareup.retrofit2:retrofit:2.9.0")
-    api("com.squareup.okhttp3:okhttp:3.14.9")
+//    api("com.squareup.okhttp3:okhttp:3.14.9")
 
     api("io.reactivex.rxjava2:rxjava:2.2.21")
     api("io.reactivex.rxjava2:rxandroid:2.1.1")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.squareup.retrofit2:adapter-rxjava2:2.9.0")
+
+//    implementation("org.jetbrains.kotlin:kotlin-reflect:1.3.72")
+//    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.2")
+//    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.2")
+//    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.5.30")
+    api("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1")
+
 }

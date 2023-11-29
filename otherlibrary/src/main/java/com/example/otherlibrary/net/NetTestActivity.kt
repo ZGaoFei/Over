@@ -23,11 +23,16 @@ class NetTestActivity : BaseActivity() {
 
         viewModel.user.observe(this) {
             Log.e("zgf", "============== $it")
+            binding.tvData.text = "${it.id}"
         }
     }
 
     override fun initView() {
         super.initView()
 
+        binding.btGetData.setOnClickListener {
+//            viewModel.getUser()
+            viewModel.getUserBody()
+        }
     }
 }
