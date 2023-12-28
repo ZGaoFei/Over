@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AnnotationTestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_anno_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取类注解数据" />
+
+        <TextView
+            android:id="@+id/tv_anno_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_anno_user_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取成员变量注解数据" />
+
+        <TextView
+            android:id="@+id/tv_anno_user_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_anno_user_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取方法注解数据" />
+
+        <TextView
+            android:id="@+id/tv_anno_user_method"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

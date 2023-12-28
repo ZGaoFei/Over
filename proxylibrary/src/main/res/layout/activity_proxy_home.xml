@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProxyHomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_proxy_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动态代理创建对象" />
+
+        <TextView
+            android:id="@+id/tv_proxy_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_proxy_create1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动态代理创建对象" />
+
+        <TextView
+            android:id="@+id/tv_proxy_show1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_anno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注解" />
+
+
+</LinearLayout>
