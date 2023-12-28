@@ -24,6 +24,7 @@ class MainActivity : BaseActivity() {
             Item("base home", "base_home"),
             Item("jetpack home", "jectpack_home"),
             Item("other home", "other_home"),
+            Item("proxy home", "proxy_home"),
         )
     }
 

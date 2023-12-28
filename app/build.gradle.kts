@@ -73,4 +73,5 @@ dependencies {
     implementation(project(":base"))
     implementation(project(":jetpack"))
     implementation(project(":otherlibrary"))
+    implementation(project(":proxylibrary"))
 }
