@@ -38,6 +38,10 @@ class ProxyHomeActivity : BaseActivity() {
         binding.btAnno.setOnClickListener {
             startActivity(Intent(this@ProxyHomeActivity, AnnotationTestActivity::class.java))
         }
+
+        binding.btBindViewTest.setOnClickListener{
+            startActivity(Intent(this@ProxyHomeActivity, BindViewTestActivity::class.java))
+        }
     }
 
     // 动态代理生成对象

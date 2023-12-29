@@ -1,4 +1,4 @@
-package com.example.lib.annotation.factory;
+package com.example.annotation_lib.bindview;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -6,9 +6,12 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.CLASS)
-@Target(ElementType.TYPE)
-public @interface Factory {
-   Class type();
+@Target(ElementType.FIELD)
+public @interface BindView {
 
-   String id();
+   /**
+    * 控件变量的resourceId
+    */
+   int value() default 0;
 }
+

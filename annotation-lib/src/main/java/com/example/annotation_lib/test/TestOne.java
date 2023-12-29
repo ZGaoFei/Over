@@ -1,11 +1,12 @@
-package com.example.lib.test;
+package com.example.annotation_lib.test;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(ElementType.TYPE)
+@Target(ElementType.FIELD)
 @Retention(RetentionPolicy.SOURCE)
-public @interface Hello {
+public @interface TestOne {
+
 }
