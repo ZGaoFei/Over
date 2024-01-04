@@ -57,5 +57,11 @@
         android:layout_height="wrap_content"
         android:text="测试BindView" />
 
+    <Button
+        android:id="@+id/bt_factory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动态编译生成factory类" />
+
 
 </LinearLayout>
