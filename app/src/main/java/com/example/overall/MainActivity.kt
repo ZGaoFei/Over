@@ -25,6 +25,7 @@ class MainActivity : BaseActivity() {
             Item("jetpack home", "jectpack_home"),
             Item("other home", "other_home"),
             Item("proxy home", "proxy_home"),
+            Item("bitmap test", "bitmap_test"),
         )
     }
 
