@@ -1,6 +1,8 @@
 package com.example.otherlibrary.multilist.viewholder
 
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.TextView
 import com.example.otherlibrary.R
 import com.example.base.multilist.MultiListViewHolder
@@ -22,5 +24,17 @@ class ItemTwoViewHolder(itemView: View) : MultiListViewHolder<ItemTwoData>(itemV
         title?.text = data.title
         content?.text = data.content
         index?.text = "${data.type}"
+    }
+
+    companion object {
+        @JvmStatic
+        fun create(view: View): ItemTwoViewHolder {
+            return ItemTwoViewHolder(view)
+        }
+
+        @JvmStatic
+        fun createView(parent: ViewGroup): View {
+            return LayoutInflater.from(parent.context).inflate(R.layout.item_two, parent, false)
+        }
     }
 }

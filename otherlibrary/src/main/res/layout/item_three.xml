@@ -5,8 +5,8 @@
 
     <ImageView
         android:id="@+id/item_three_iv"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/ic_launcher_foreground"/>
 
 </FrameLayout>

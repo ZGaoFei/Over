@@ -1,6 +1,8 @@
 package com.example.otherlibrary.multilist.viewholder
 
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.ImageView
 import com.example.base.imageloader.ImageLoader
 import com.example.base.multilist.MultiListViewHolder
@@ -16,5 +18,17 @@ class ItemThreeViewHolder(itemView: View) : MultiListViewHolder<ItemThreeData>(i
 
     override fun update(data: ItemThreeData) {
         ImageLoader.loadImage(imageView, data.imageUrl)
+    }
+
+    companion object {
+        @JvmStatic
+        fun create(view: View): ItemThreeViewHolder {
+            return ItemThreeViewHolder(view)
+        }
+
+        @JvmStatic
+        fun createView(parent: ViewGroup): View {
+            return LayoutInflater.from(parent.context).inflate(R.layout.item_three, parent, false)
+        }
     }
 }
