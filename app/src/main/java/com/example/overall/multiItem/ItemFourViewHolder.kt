@@ -22,13 +22,10 @@ class ItemFourViewHolder(itemView: View) : MultiListViewHolder<ItemOneData>(item
 
     companion object {
         @JvmStatic
-        fun create(view: View): ItemFourViewHolder {
+        fun create(parent: ViewGroup): ItemFourViewHolder {
+            val view =
+                LayoutInflater.from(parent.context).inflate(R.layout.item_four_view, parent, false)
             return ItemFourViewHolder(view)
-        }
-
-        @JvmStatic
-        fun createView(parent: ViewGroup): View {
-            return LayoutInflater.from(parent.context).inflate(R.layout.item_four_view, parent, false)
         }
     }
 

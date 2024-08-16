@@ -1,6 +1,5 @@
 package com.example.base.multilist
 
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import java.lang.Class.forName
@@ -40,10 +39,8 @@ abstract class MultiListAdapter(private val list: MutableList<MultiListItemData>
             // 尝试使用已知的ViewHolder工厂方法创建实例
             val clazz = forName(clazzName)
             if (MultiListViewHolder::class.java.isAssignableFrom(clazz)) {
-                val createView = clazz.getMethod("createView", ViewGroup::class.java)
-                val invokeView = createView.invoke(null, parent)
-                val factoryMethod = clazz.getMethod("create", View::class.java)
-                return factoryMethod.invoke(null, invokeView) as MultiListViewHolder<MultiListItemData>
+                val factoryMethod = clazz.getMethod("create", ViewGroup::class.java)
+                return factoryMethod.invoke(null, parent) as MultiListViewHolder<MultiListItemData>
             } else {
                 throw IllegalArgumentException("Class $clazzName is not a subclass of MultiListViewHolder")
             }
@@ -61,10 +58,8 @@ abstract class MultiListAdapter(private val list: MutableList<MultiListItemData>
         try {
             val clazz = forName(clazzName)
             if (MultiListViewHolder::class.java.isAssignableFrom(clazz)) {
-                val createView = clazz.getMethod("createView", ViewGroup::class.java)
-                val invokeView = createView.invoke(null, parent)
-                val constructor = clazz.getConstructor(View::class.java)
-                return constructor.newInstance(invokeView) as MultiListViewHolder<MultiListItemData>
+                val constructor = clazz.getConstructor(ViewGroup::class.java)
+                return constructor.newInstance(parent) as MultiListViewHolder<MultiListItemData>
             } else {
                 throw IllegalArgumentException("Class $clazzName is not a subclass of MultiListViewHolder")
             }
