@@ -24,6 +24,7 @@ class OtherHomeActivity : BaseActivity() {
         list = mutableListOf(
             Item("multi list", "multi_list"),
             Item("net test", "net_test"),
+            Item("multi tab", "multi_tab"),
         )
     }
 
